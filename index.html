@@ -1,163 +1,698 @@
-<!DOCTYPE HTML>
-<html>
-    <head>
-        <title>Konta Engine</title>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-        <link rel="stylesheet" href="assets/css/main.css" />
-    </head>
-    <body class="is-preload">
+<!DOCTYPE html>
+<html lang="en">
 
-        <div id="header">
-                <span class="logo icon fa-paper-plane"></span>
-                <h1>Konta Engine</h1>
-                <p>Control total de ventas, stock y utilidades desde el móvil</p>
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Konta - Sistema de Punto de Venta</title>
+  <meta name="description" content="Konta: sistema de punto de venta offline para negocios. Control de inventario, sucursales, reportes y mas.">
+  <meta name="keywords" content="punto de venta, POS, inventario, sucursales, Cuba, Konta">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: SoftLand
+  * Template URL: https://bootstrapmade.com/softland-bootstrap-app-landing-page-template/
+  * Updated: Aug 07 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1 class="sitename">Konta</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Inicio</a></li>
+          <li><a href="#about">Acerca de...</a></li>
+          <li><a href="#features">Módulos</a></li>
+           <!-- <li><a href="#pricing">Pricing</a></li> -->
+          <li><a href="https://github.com/giesy85/KontaEngine/releases/download/release/app-release.apk" class="download-link"><i class="bi bi-download"></i> Descarga</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-4 order-lg-last hero-img" data-aos="zoom-out">
+            <img src="assets/img/phone_1.png" alt="Phone 1" class="phone-1">
+            <img src="assets/img/phone_2.png" alt="Phone 2" class="phone-2">
+          </div>
+          <div class="col-lg-8 d-flex flex-column justify-content-center align-items text-center text-md-start" data-aos="fade-up">
+            <h2>Tu negocio en tus manos con Konta</h2>
+            <p>Sistema de punto de venta offline con control de inventario, sucursales, reportes y mas. Funciona sin internet.</p>
+            <div class="d-flex mt-4 justify-content-center justify-content-md-start">
+              <a href="https://github.com/giesy85/KontaEngine/releases/download/release/app-release.apk" class="download-btn"><i class="bi bi-android"></i> <span>Descargar APK</span></a>
             </div>
+          </div>
+        </div>
+      </div>
 
-        <div id="main">
+    </section><!-- /Hero Section -->
 
-                <header class="major container medium">
-                    <h2>Funciona sin internet, todo local entre laptop y teléfono. 
-                </header>
+    <!-- About Section -->
+    <section id="about" class="about section">
 
-                <div class="box alt container">
-                    <section class="feature left">
-                        <a href="#" class="image icon solid fa-database"><img src="images/pic01.jpg" alt="" /></a>
-                        <div class="content">
-                            <h3>Robustez de Base de Datos</h3>
-                            <p>Utilizamos motores de datos que garantizan que cada centavo sea contabilizado. Historial de ventas blindado y reportes precisos de ganancias netas.</p>
-                        </div>
-                    </section>
-                    <section class="feature right">
-                        <a href="#" class="image icon solid fa-mobile-alt"><img src="images/pic02.jpg" alt="" /></a>
-                        <div class="content">
-                            <h3>Movilidad Android</h3>
-                            <p>Libertad total. Realiza ventas desde cualquier lugar de tu local. La interfaz está optimizada para ser rápida, limpia y moderna.</p>
-                        </div>
-                    </section>
-                    <section class="feature left">
-                        <a href="#" class="image icon solid fa-box"><img src="images/pic03.jpg" alt="" /></a>
-                        <div class="content">
-                            <h3>Control de Inventario</h3>
-                            <p>Gestión de productos con imágenes, categorías y alertas de stock. Mantén tu inventario actualizado en tiempo real</p>
-                        </div>
-                    </section>
-                    <section class="feature right">
-                        <a href="#" class="image icon solid fa-chart-bar"><img src="images/pic03.jpg" alt="" /></a>
-                        <div class="content">
-                            <h3>Reportes Financieros</h3>
-                            <p>Gráficas de rendimiento diario, semanal y mensual. ¡Mira cómo crece tu negocio en tiempo real!</p>
-                        </div>
-                    </section>
-                    <section class="feature left">
-                        <a href="#" class="image icon solid fa-lock"><img src="images/pic03.jpg" alt="" /></a>
-                        <div class="content">
-                            <h3>Seguridad por Hardware</h3>
-                            <p>Protección garantizada para tus datos financieros con cifrado local.</p>
-                        </div>
-                    </section>
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row align-items-xl-center gy-5">
+
+          <div class="col-xl-5 content">
+            <h3>Que es Konta</h3>
+            <h2>Un punto de venta pensado para funcionar sin depender de nada</h2>
+            <p>Konta es un sistema de punto de venta offline, disenado para negocios que necesitan algo simple, rapido y que funcione sin internet ni electricidad estable. Controla ventas, inventario, sucursales y reportes desde tu telefono o computadora.</p>
+          </div>
+
+          <div class="col-xl-7">
+            <div class="row gy-4 icon-boxes">
+
+              <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+                <div class="icon-box">
+                  <i class="bi bi-wifi-off"></i>
+                  <h3>Funciona offline</h3>
+                  <p>Vende, registra gastos y abre cajas sin conexion. Todo se sincroniza automaticamente cuando vuelve el internet.</p>
                 </div>
+              </div> <!-- End Icon Box -->
 
-                <footer class="major container medium">
-                    <h3>Planes de Compra</h3>
-                    <div class="table-wrapper">
-                        <table class="alt">
-                            <thead>
-                                <tr>
-                                    <th>Plan</th>
-                                    <th>Precio</th>
-                                    <th>Ahorro</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Mensual</td>
-                                    <td>$800 CUP</td>
-                                    <td>-</td>
-                                </tr>
-                                <tr>
-                                    <td>3 meses</td>
-                                    <td>$2.280 CUP</td>
-                                    <td>5%</td>
-                                </tr>
-                                <tr>
-                                    <td>6 meses</td>
-                                    <td>$4.080 CUP</td>
-                                    <td>15%</td>
-                                </tr>
-                                <tr>
-                                    <td>12 meses</td>
-                                    <td>$7.200 CUP</td>
-                                    <td>25%</td>
-                                </tr>
-                                <tr>
-                                    <td>3 Años</td>
-                                    <td>$14.400 CUP</td>
-                                    <td>50%</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-
-					<!-- Boton de contacto par
-                    <ul class="actions special" style="margin-bottom: 3em;">
-                       <li><a href="#" class="button primary">Contactar para comprar</a></li>
-                    </ul>
-					-->
-
-                    <hr />
-
-                    <h3>¿Quieres probar antes?</h3>
-                    <p>Inicia una prueba gratuita de 15 días.</p>
-                    <ul class="actions special">
-                        <li><a href="https://drive.google.com/file/d/1ZCLe_OzNkSPuQdz7cQLREitrq93Jft4V/view?usp=drive_link" download class="button download-btn">⬇ Descargar ahora</a></li>
-                    </ul>
-                </footer>
-
-            </div>
-
-        <div id="footer">
-                <div class="container medium">
-                    <header class="major last">
-                        <h2>Preguntas y Sugerencias?</h2>
-                    </header>
-
-                    <p>Puede dejarnos un e-mail llenando los campos a continuación</p>
-
-                    <form method="POST" action="https://formspree.io/f/mnjejdvl">
-                        <div class="row">
-                            <div class="col-6 col-12-mobilep">
-                                <input type="text" name="name" placeholder="Nombre" required />
-                            </div>
-                            <div class="col-6 col-12-mobilep">
-                                <input type="email" name="email" placeholder="Correo electrónico" required />
-                            </div>
-                            <div class="col-12">
-                                <textarea name="message" placeholder="Mensaje" rows="6" required></textarea>
-                            </div>
-                            <div class="col-12">
-                                <ul class="actions special">
-                                    <li><input type="submit" value="Enviar Mensaje" /></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </form>
-
-                    <ul class="icons">
-                        <li><a href="https://www.facebook.com/KontaEngine" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-                    </ul>
-
-                    <ul class="copyright">
-                        <li>&copy; Konta Engine. Todos los derechos Reservados.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-                    </ul>
+              <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+                <div class="icon-box">
+                  <i class="bi bi-shop"></i>
+                  <h3>Multi-sucursal</h3>
+                  <p>Varios puntos de venta con stock propio, transferencias entre ellos y reportes individuales por sucursal.</p>
                 </div>
+              </div> <!-- End Icon Box -->
+
+              <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
+                <div class="icon-box">
+                  <i class="bi bi-cloud-arrow-up"></i>
+                  <h3>Backups automaticos</h3>
+                  <p>Respaldo diario y mensual de tu base de datos. Tus datos siempre estan seguros y restaurables.</p>
+                </div>
+              </div> <!-- End Icon Box -->
+
+              <div class="col-md-6" data-aos="fade-up" data-aos-delay="500">
+                <div class="icon-box">
+                  <i class="bi bi-telegram"></i>
+                  <h3>Soporte directo</h3>
+                  <p>Bot de Telegram con respuestas inmediatas a las preguntas mas frecuentes sobre la app.</p>
+                </div>
+              </div> <!-- End Icon Box -->
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Featured Section -->
+    <section id="featured" class="featured section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Las mejores herramientas de Konta</h2>
+        <p>Detalles que marcan la diferencia en el dia a dia de tu negocio</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4" data-aos="fade-up" data-aos-delay="100">
+
+          <div class="col-md-4">
+            <div class="card">
+              <div class="img">
+                <img src="assets/img/cards-4.png" alt="" class="img-fluid">
+              </div>
+              <h2 class="title">Apertura y Cierre de Caja</h2>
+              <p>
+                Cada turno comienza declarando el fondo y termina con un cuadre automatico. Si la app se cierra o la luz se va, Konta recupera la sesion exacta donde quedaste.
+              </p>
+            </div>
+          </div><!-- End Card Item -->
+
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="card">
+              <div class="img">
+                <img src="assets/img/cards-2.png" alt="" class="img-fluid">
+              </div>
+              <h2 class="title">Integracion con El Toque</h2>
+              <p>
+                La tasa de cambio USD/MN se actualiza sola desde ElToque. Cuando cambias la moneda base, los precios se convierten de forma automatica y tu historial se mantiene intacto.
+              </p>
+            </div>
+          </div><!-- End Card Item -->
+
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="card">
+              <div class="img">
+                <img src="assets/img/cards-6.png" alt="" class="img-fluid">
+              </div>
+              <h2 class="title">Usuarios y Roles</h2>
+              <p>
+                Asigna cajeros, vendedores o almaceneros. Cada rol ve solo lo que le corresponde. El administrador controla todo desde un solo lugar, incluyendo el cierre forzado de cajas.
+              </p>
+            </div>
+          </div><!-- End Card Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Featured Section -->
+
+    <!-- Cards Section -->
+    <section id="cards" class="cards section">
+
+      <div class="container">
+
+        <div class="text-center mb-4 steps-img" data-aos="zoom-out">
+          <img src="assets/img/steps.png" alt="">
+        </div>
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="card-item">
+              <span>01</span>
+              <h4>Descargue y Registre su Negocio</h4>
+              <p>Instale la app en su telefono o computadora. Cree su cuenta con los datos basicos de su negocio: nombre, telefono y tasa de cambio.</p>
+            </div>
+          </div><!-- Card Item -->
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="card-item">
+              <span>02</span>
+              <h4>Configure su Moneda Base</h4>
+              <p>Elija si opera en MN o USD. La tasa de cambio se actualiza automaticamente desde ElToque, o puede definirla de forma manual.</p>
+            </div>
+          </div><!-- Card Item -->
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="card-item">
+              <span>03</span>
+              <h4>Empiece a Operar</h4>
+              <p>Agregue sus productos, abra una caja y comience a vender. Konta funciona sin internet y sincroniza sus datos cuando se reconecte.</p>
+            </div>
+          </div><!-- Card Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Cards Section -->
+
+    <!-- Features Section -->
+    <section id="features" class="features section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Modulos</h2>
+        <p>Todo lo que necesitas para gestionar tu negocio, en una sola app</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4 align-items-center features-item">
+          <div class="col-md-5 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="100">
+            <img src="assets/img/features-1.png" class="img-fluid" alt="">
+          </div>
+          <div class="col-md-7" data-aos="fade-up" data-aos-delay="100">
+            <h3>Punto de Venta</h3>
+            <p class="fst-italic">
+              Interfaz rapida para vender. Carrito, multiples metodos de pago y cierre de caja con cuadre automatico.
+            </p>
+            <ul>
+              <li><i class="bi bi-check"></i> <span>Ventas con o sin conexion a internet</span></li>
+              <li><i class="bi bi-check"></i> <span>Pago en efectivo, transferencia y USD</span></li>
+              <li><i class="bi bi-check"></i> <span>Apertura y cierre de caja por turno</span></li>
+            </ul>
+          </div>
+        </div><!-- Features Item -->
+
+        <div class="row gy-4 align-items-center features-item">
+          <div class="col-md-5 order-1 order-md-2 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="200">
+            <img src="assets/img/features-2.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="col-md-7 order-2 order-md-1" data-aos="fade-up" data-aos-delay="200">
+            <h3>Inventario y Almacen</h3>
+            <p class="fst-italic">
+              Control completo de tu stock. Productos con variantes, precios por cantidad y niveles de almacenes.
+            </p>
+            <ul>
+              <li><i class="bi bi-check"></i> <span>Gestion de variantes (talla, color, sabor...)</span></li>
+              <li><i class="bi bi-check"></i> <span>Almacen separado de tienda con transferencias</span></li>
+              <li><i class="bi bi-check"></i> <span>Alertas de stock bajo automaticas</span></li>
+            </ul>
+          </div>
+        </div><!-- Features Item -->
+
+        <div class="row gy-4 align-items-center features-item">
+          <div class="col-md-5 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="300">
+            <img src="assets/img/features-3.png" class="img-fluid" alt="">
+          </div>
+          <div class="col-md-7" data-aos="fade-up" data-aos-delay="300">
+            <h3>Sucursales</h3>
+            <p class="fst-italic">
+              Maneja varios puntos de venta desde un mismo lugar. Stock, ventas y reportes independientes por sucursal.
+            </p>
+            <ul>
+              <li><i class="bi bi-check"></i> <span>Stock propio por cada punto de venta</span></li>
+              <li><i class="bi bi-check"></i> <span>Transferencias entre sucursales y almacenes</span></li>
+              <li><i class="bi bi-check"></i> <span>Reportes y ranking de productos por sucursal</span></li>
+            </ul>
+          </div>
+        </div><!-- Features Item -->
+
+        <div class="row gy-4 align-items-center features-item">
+          <div class="col-md-5 order-1 order-md-2 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="400">
+            <img src="assets/img/features-4.png" class="img-fluid" alt="">
+          </div>
+          <div class="col-md-7 order-2 order-md-1" data-aos="fade-up" data-aos-delay="400">
+            <h3>Reportes y Moneda Base</h3>
+            <p class="fst-italic">
+              Numeros claros de tu negocio. Reportes diarios, semanales y mensuales, con exportacion a PDF.
+            </p>
+            <ul>
+              <li><i class="bi bi-check"></i> <span>Facturacion, ganancia y gastos por periodo</span></li>
+              <li><i class="bi bi-check"></i> <span>Moneda base en MN o USD con conversion automatica</span></li>
+              <li><i class="bi bi-check"></i> <span>Resumen de productos vendidos y exportable a PDF</span></li>
+            </ul>
+          </div>
+        </div><!-- Features Item -->
+
+      </div>
+
+    </section><!-- /Features Section -->
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Gallery</h2>
+        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+      </div><!-- End Section Title -->
+
+      <div class="container-fluid" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "centeredSlides": true,
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              },
+              "breakpoints": {
+                "320": {
+                  "slidesPerView": 1,
+                  "spaceBetween": 0
+                },
+                "768": {
+                  "slidesPerView": 3,
+                  "spaceBetween": 30
+                },
+                "992": {
+                  "slidesPerView": 5,
+                  "spaceBetween": 30
+                },
+                "1200": {
+                  "slidesPerView": 7,
+                  "spaceBetween": 30
+                }
+              }
+            }
+          </script>
+          <div class="swiper-wrapper align-items-center">
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery-full" href="assets/img/app-gallery/app-gallery-1.png"><img src="assets/img/app-gallery/app-gallery-1.png" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery-full" href="assets/img/app-gallery/app-gallery-2.png"><img src="assets/img/app-gallery/app-gallery-2.png" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery-full" href="assets/img/app-gallery/app-gallery-3.png"><img src="assets/img/app-gallery/app-gallery-3.png" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery-full" href="assets/img/app-gallery/app-gallery-4.png"><img src="assets/img/app-gallery/app-gallery-4.png" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery-full" href="assets/img/app-gallery/app-gallery-5.png"><img src="assets/img/app-gallery/app-gallery-5.png" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery-full" href="assets/img/app-gallery/app-gallery-6.png"><img src="assets/img/app-gallery/app-gallery-6.png" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery-full" href="assets/img/app-gallery/app-gallery-7.png"><img src="assets/img/app-gallery/app-gallery-7.png" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery-full" href="assets/img/app-gallery/app-gallery-8.png"><img src="assets/img/app-gallery/app-gallery-8.png" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery-full" href="assets/img/app-gallery/app-gallery-9.png"><img src="assets/img/app-gallery/app-gallery-9.png" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery-full" href="assets/img/app-gallery/app-gallery-10.png"><img src="assets/img/app-gallery/app-gallery-10.png" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery-full" href="assets/img/app-gallery/app-gallery-11.png"><img src="assets/img/app-gallery/app-gallery-11.png" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery-full" href="assets/img/app-gallery/app-gallery-12.png"><img src="assets/img/app-gallery/app-gallery-12.png" class="img-fluid" alt=""></a></div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+
+    </section><!-- /Gallery Section -->
+
+    <!--
+    <section id="testimonials" class="testimonials section light-background">
+
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Testimonials</h2>
+        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+      </div>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              }
+            }
+          </script>
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+                <h3>Saul Goodman</h3>
+                <h4>Ceo &amp; Founder</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
             </div>
 
-        <script src="assets/js/jquery.min.js"></script>
-            <script src="assets/js/browser.min.js"></script>
-            <script src="assets/js/breakpoints.min.js"></script>
-            <script src="assets/js/util.js"></script>
-            <script src="assets/js/main.js"></script>
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
+                <h3>Sara Wilsson</h3>
+                <h4>Designer</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div>
 
-    </body>
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
+                <h3>Jena Karlis</h3>
+                <h4>Store Owner</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
+                <h3>Matt Brandon</h3>
+                <h4>Freelancer</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
+                <h3>John Larson</h3>
+                <h4>Entrepreneur</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div>
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+
+    </section>
+    -->
+
+
+    <!--
+    <section id="pricing" class="pricing section">
+
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Pricing</h2>
+        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+      </div>
+
+      <div class="container" data-aos="zoom-in" data-aos-delay="100">
+
+        <div class="row g-4">
+
+          <div class="col-lg-4">
+            <div class="pricing-item">
+              <h3>Free Plan</h3>
+              <div class="icon">
+                <i class="bi bi-box"></i>
+              </div>
+              <h4><sup>$</sup>0<span> / month</span></h4>
+              <ul>
+                <li><i class="bi bi-check"></i> <span>Quam adipiscing vitae proin</span></li>
+                <li><i class="bi bi-check"></i> <span>Nec feugiat nisl pretium</span></li>
+                <li><i class="bi bi-check"></i> <span>Nulla at volutpat diam uteera</span></li>
+                <li class="na"><i class="bi bi-x"></i> <span>Pharetra massa massa ultricies</span></li>
+                <li class="na"><i class="bi bi-x"></i> <span>Massa ultricies mi quis hendrerit</span></li>
+              </ul>
+              <div class="text-center"><a href="#" class="buy-btn">Buy Now</a></div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="pricing-item featured">
+              <h3>Business Plan</h3>
+              <div class="icon">
+                <i class="bi bi-rocket"></i>
+              </div>
+
+              <h4><sup>$</sup>29<span> / month</span></h4>
+              <ul>
+                <li><i class="bi bi-check"></i> <span>Quam adipiscing vitae proin</span></li>
+                <li><i class="bi bi-check"></i> <span>Nec feugiat nisl pretium</span></li>
+                <li><i class="bi bi-check"></i> <span>Nulla at volutpat diam uteera</span></li>
+                <li><i class="bi bi-check"></i> <span>Pharetra massa massa ultricies</span></li>
+                <li><i class="bi bi-check"></i> <span>Massa ultricies mi quis hendrerit</span></li>
+              </ul>
+              <div class="text-center"><a href="#" class="buy-btn">Buy Now</a></div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="pricing-item">
+              <h3>Developer Plan</h3>
+              <div class="icon">
+                <i class="bi bi-send"></i>
+              </div>
+              <h4><sup>$</sup>49<span> / month</span></h4>
+              <ul>
+                <li><i class="bi bi-check"></i> <span>Quam adipiscing vitae proin</span></li>
+                <li><i class="bi bi-check"></i> <span>Nec feugiat nisl pretium</span></li>
+                <li><i class="bi bi-check"></i> <span>Nulla at volutpat diam uteera</span></li>
+                <li><i class="bi bi-check"></i> <span>Pharetra massa massa ultricies</span></li>
+                <li><i class="bi bi-check"></i> <span>Massa ultricies mi quis hendrerit</span></li>
+              </ul>
+              <div class="text-center"><a href="#" class="buy-btn">Buy Now</a></div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+    -->
+
+    <!-- Faq Section -->
+    <section id="faq" class="faq section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Preguntas Frecuentes</h2>
+        <p>Resolvemos las dudas mas comunes sobre Konta</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row justify-content-center">
+
+          <div class="col-lg-10" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="faq-container">
+
+              <div class="faq-item faq-active">
+                <h3>¿Como instalo Konta?</h3>
+                <div class="faq-content">
+                  <p>Descargue el archivo APK desde GitHub y abralo en su telefono Android. Acepte la instalacion de fuentes desconocidas si se lo solicita. En computadora, descargue el ejecutable para Windows o Linux y ejecutelo directamente. No requiere instalacion complicada.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3>¿Como funciona sin internet?</h3>
+                <div class="faq-content">
+                  <p>Konta guarda todas las ventas, gastos y aperturas de caja localmente en su dispositivo. Puede seguir vendiendo sin conexion y todo se sincroniza automaticamente cuando vuelva a tener internet. Si tiene varias sucursales, cada una opera de forma independiente.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3>¿Que pasa si se va la luz o se cierra la app?</h3>
+                <div class="faq-content">
+                  <p>La sesion de caja se recupera exactamente donde quedo. Al volver a abrir Konta, el sistema detecta la apertura pendiente y le permite continuar sin perder ningun dato. No necesita volver a abrir caja ni rehacer ventas.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3>¿Como funcionan los puntos de venta?</h3>
+                <div class="faq-content">
+                  <p>Cada sucursal tiene su propio stock, sus ventas y sus reportes. Puede transferir productos entre sucursales y desde el almacen principal. Al abrir una caja, se selecciona el punto de venta y todo lo que se venda queda vinculado a ese lugar.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3>¿Como creo usuarios y que roles hay?</h3>
+                <div class="faq-content">
+                  <p>Desde el panel de Configuracion, el administrador puede crear usuarios con diferentes roles: ADMIN (acceso total), VENTAS (solo vende y ve reportes), ALMACEN (recibe, devuelve y transfiere stock) y CAJERO (solo abre y maneja caja). Cada rol ve solo lo que le corresponde.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3>¿Como funciona la moneda base y el tipo de cambio?</h3>
+                <div class="faq-content">
+                  <p>Konta le permite elegir si su negocio opera en MN o USD como moneda base. La tasa de cambio se actualiza sola desde ElToque, o puede definirla manualmente. Al cambiar de moneda base, los precios del inventario se convierten automaticamente. El historial de ventas nunca se modifica.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+            </div>
+
+          </div><!-- End Faq Column-->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Faq Section -->
+
+  </main>
+
+  <footer id="footer" class="footer dark-background">
+    <div class="container">
+      <h3 class="sitename">Konta</h3>
+      <p>Sistema de punto de venta offline. Control de inventario, sucursales, reportes y mas para tu negocio.</p>
+      <div class="social-links d-flex justify-content-center">
+        <a href="https://www.facebook.com/KontaEngine" target="_blank"><i class="bi bi-facebook"></i></a>
+        <a href="https://t.me/konta_app" target="_blank"><i class="bi bi-telegram"></i></a>
+      </div>
+      <div class="container">
+        <div class="copyright">
+          <span>Copyright</span> <strong class="px-1 sitename">Konta</strong> <span>All Rights Reserved</span>
+        </div>
+        <div class="credits">
+          <!-- All the links in the footer should remain intact. -->
+          <!-- You can delete the links only if you've purchased the pro version. -->
+          <!-- Licensing information: https://bootstrapmade.com/license/ -->
+          <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> | <a href="https://bootstrapmade.com/tools/">DevTools</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
 </html>
