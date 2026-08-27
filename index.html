@@ -693,6 +693,13 @@
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
 
+  <!-- Limpia fbclid de Facebook de la URL sin recargar -->
+  <script>
+    if (window.location.search.includes('fbclid=')) {
+      window.history.replaceState({}, document.title, window.location.origin + window.location.pathname);
+    }
+  </script>
+
 </body>
 
 </html>

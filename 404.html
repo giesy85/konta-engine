@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Redirecting...</title>
+  <script>
+    // GitHub Pages SPA redirect
+    // Cuando Facebook (o cualquier sharing) agrega paths/params extra,
+    // GitHub Pages devuelve 404. Este archivo lo captura y redirige al index.
+    (function() {
+      var loc = window.location;
+      var path = loc.pathname;
+      // Extrae el base path del repo (e.g. /KontaEngine/ de /KontaEngine/anything)
+      var firstSlash = path.indexOf('/', 1);
+      var base = firstSlash > 0 ? path.substring(0, firstSlash + 1) : '/';
+      window.location.replace(loc.origin + base + loc.search);
+    })();
+  </script>
+  <noscript>
+    <meta http-equiv="refresh" content="0; url=./">
+  </noscript>
+</head>
+<body>
+  <p>Redirigiendo...</p>
+</body>
+</html>
