@@ -1130,6 +1130,83 @@ section,
   }
 }
 
+/* =======================================
+   Gallery Videos (vertical / 9:16, como graba el móvil)
+   Cuadrícula FIJA: todos los videos visibles a la vez (sin carrusel).
+   En móvil 1 columna, tablet 2, desktop 3.
+   ======================================= */
+.gallery-videos .video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 24px;
+  justify-items: center;
+}
+
+.gallery-videos .video-item {
+  position: relative;
+  width: 100%;
+  max-width: 270px;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+}
+
+.gallery-videos .video-item img {
+  display: block;
+  width: 100%;
+  max-height: none;
+  aspect-ratio: 9 / 16;
+  object-fit: cover;
+}
+
+/* Overlay oscuro + botón de reproducción sobre la miniatura */
+.gallery-videos .video-item a {
+  position: relative;
+  display: block;
+}
+
+.gallery-videos .video-item a::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  transition: background 0.3s;
+}
+
+.gallery-videos .video-item a:hover::before {
+  background: rgba(0, 0, 0, 0.15);
+}
+
+.gallery-videos .video-item a::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.92)
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M8 5v14l11-7z' fill='%23FF0000'/%3E%3C/svg%3E")
+    center / 26px no-repeat;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
+}
+
+/* Móvil: máximo 2 columnas para no hacer la miniatura demasiado pequeña */
+@media (max-width: 576px) {
+  .gallery-videos .video-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+}
+
+@media (max-width: 340px) {
+  .gallery-videos .video-grid {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+}
+
 /*--------------------------------------------------------------
 # Testimonials Section
 --------------------------------------------------------------*/
